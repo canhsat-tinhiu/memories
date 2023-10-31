@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Memories</title>
+    <link rel="stylesheet" href="album.css">
+    <link rel="stylesheet" href="lightbox.css">
+</head>
+
+<body>
+    <div class="menu_container">
+        <nav class="navbar" id="navbar">
+            <a class="logo" href="index.html">DUCKY</a>
+            <ul class="nav-links">
+                <input type="checkbox" id="checkbox_toggle" />
+                <label for="checkbox_toggle" class="hamburger">
+                    <span class="hamburger-line"></span>
+                </label>
+
+
+                <div class="menu_wrapper">
+                    <ul class="menu">
+                        <li><a href="index.html">HOME</a></li>
+                        <li><a href="">ABOUT</a></li>
+                        <li><a href="">MORE</a></li>
+
+                        <li><a href="">FUNCTION</a>
+                        <ul class="dropdown">
+                            <li><a href="our_time.html">Our time</a></li>
+                            <li><a href="album.html">Our memories</a></li>
+                            <li><a href="#"></a></li>
+                        </ul>
+                        </li>
+                    </ul>
+                </div>
+            </ul>
+        </nav>
+    </div>
+<div class="btn_container">
+    <a href="album.html " class="btn"> Image</a>
+    <a href="#" class="btn"> Video</a>
+</div>
+    <div class="anh_container" id="hcm">
+
+        <script>
+            for (var i = 1; i <= 95; i++) {
+                document.getElementById("hcm").innerHTML += `<a href="./images1/image${i}.jpg" data-lightbox="models" data-title=""><img class="mySlides" src="./images1/image${i}.jpg"style="width:100%"></a>`;
+            }
+
+        </script>
+
+        <script>
+            for (var i = 1; i <= 95; i++) {
+                document.getElementById("hcm").innerHTML += `<a href="./images2/image${i}.jpg" data-lightbox="models" data-title=""><img class="mySlides" src="./images2/image${i}.jpg"style="width:100%"></a>`;
+            }
+
+        </script>
+        <script>
+            for (var i = 1; i <= 95; i++) {
+                document.getElementById("hcm").innerHTML += `<a href="./images3/image${i}.jpg" data-lightbox="models" data-title=""><img class="mySlides" src="./images3/image${i}.jpg"style="width:100%"></a>`;
+            }
+
+        </script>
+        <script>
+            for (var i = 1; i <= 62; i++) {
+                document.getElementById("hcm").innerHTML += `<a href="./images4/image${i}.jpg" data-lightbox="models" data-title=""><img class="mySlides" src="./images4/image${i}.jpg"style="width:100%"></a>`;
+            }
+
+        </script>
+    </div>
+    <script src="lightbox-plus-jquery.js"></script>
+</body>
+
+</html>

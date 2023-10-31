@@ -1,0 +1,338 @@
+
+
+.btn_container{
+    margin-top: 20px;
+    margin-left: 43%;
+    width: 300px;
+    height:50px;
+    
+    background-color: rgb(255, 255, 255);
+}
+.btn_container a{
+}
+.btn_container .btn {
+    background: rgb(230, 230, 230);
+    border-radius: 5px  ;
+    border-color: #000000 2px;
+    margin-left: 50px;
+    font-size: 26px;
+    color: #000000;
+    animation: slideTop 1s ease forwards;
+    animation-delay: 0.5s;
+
+}
+.btn:hover{
+    background: rgb(226, 226, 226);
+    color: #b427db;
+    box-shadow: 0 0 10px rgb(223, 223, 223);
+
+}
+
+
+.mySlides {
+    border: 2px solid #94949494;
+    border-radius: 20px;
+    vertical-align: top;
+    width: 90px;
+    height: 150px;
+    object-fit: cover;
+    object-position: 50% 50%;
+    display: flex;
+}
+
+.anh_container {
+    position: relative;
+    display: grid;
+    margin-left: 100px;
+    margin-right: 100px;
+    object-fit: cover;
+    object-position: 50% 50%;
+    align-items: center;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    gap: 15px;
+}
+
+.mySlides:hover {
+    filter: none;
+    flex: 4;
+    transform: scale(1.12);
+    border: 3px solid #ff878794;
+}
+
+.mySlides:target {
+    height: 400;
+    width: 450;
+
+}
+
+.mySlides:target+.close {
+    display: block;
+}
+
+.mySlides:target+.close+.expand {
+    display: none;
+}
+
+.close {
+    background-image: url(https://bit.ly/29QeT21);
+    background-repeat: no-repeat;
+    bottom: 418px;
+    display: none;
+    height: 32px;
+    left: 462px;
+    margin-top: -32px;
+    position: relative;
+    width: 32px;
+}
+
+.expand {
+    bottom: 125px;
+    margin-left: -32px;
+    margin-right: 16px;
+    pointer-events: none;
+    position: relative;
+}
+
+
+/* menuuuuuuuuuuuuuuuuuu */
+
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz@8..144&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+    scroll-behavior: smooth;
+}
+
+body {
+    overflow-x: hidden;
+    background: #ffffff;
+}
+
+a {
+    font-size: 23px;
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+}
+
+.navbar {
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 20px;
+    color: #fff;
+    z-index: 10000;
+}
+
+.nav-links li a {
+    color: rgb(196, 54, 54);
+    transition: 0.3s all ease-in-out;
+    position: relative;
+
+}
+
+ul li ul.dropdown {
+    min-width: 100px;
+    /* Set width of the dropdown */
+    background: #f2f2f2;
+    border-radius: 5px;
+    display: none;
+    position: absolute;
+    z-index: 999;
+    left: 0;
+    margin-left: 75%;
+}
+
+ul li:hover ul.dropdown {
+    display: block;
+    /* Display the dropdown */
+}
+
+ul li ul.dropdown li {
+    display: block;
+}
+
+.nav-links li a:hover {
+    color: #b427db;
+    transition: 0.4s all ease;
+    border-radius: 5px;
+    background-color: rgb(218, 218, 218);
+    width: 30px;
+    height: 40px;
+    font-size: 30px;
+}
+
+.logo {
+    color: rgb(150, 35, 35);
+    cursor: pointer;
+    font-size: 30px;
+}
+
+.logo:hover {
+    color: #b427db;
+}
+
+.menu {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+    gap: 10px;
+}
+
+.menu li {
+    padding: 5px 15px;
+}
+
+.menu a {
+    padding: 0 10px;
+}
+
+.menu a:hover {
+    transition: 0.3s all ease;
+    color: #fff;
+}
+
+#checkbox_toggle {
+    display: none;
+}
+
+.hamburger {
+    display: none;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.hamburger-line {
+    background-color: #fff;
+    display: block;
+    height: 3px;
+    position: relative;
+    width: 28px;
+}
+
+.hamburger-line::before,
+.hamburger-line::after {
+    background-color: #fff;
+    content: "";
+    display: block;
+    position: absolute;
+    transition: 0.3s all ease;
+    width: 100%;
+    height: 100%;
+}
+
+.hamburger-line::before {
+    top: 7px;
+}
+
+.hamburger-line::after {
+    top: -7px;
+}
+
+@media (max-width: 768px) {
+    .navbar {
+        justify-content: space-between;
+    }
+
+    .logo {
+        margin-left: 20px;
+    }
+
+    .menu {
+        margin-top: 20px;
+        background-color: #ffffff;
+        text-align: center;
+        margin-right: 0px;
+        width: 100%;
+        height: 90vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .menu li a {
+        color: #fff;
+        display: block;
+        padding: 15px;
+        transition: 0.3s ease;
+        z-index: 1000;
+    }
+
+    .menu li {
+        color: #fff;
+        padding: 10px 20px;
+        opacity: 0;
+        transform: translateY(-20px);
+        transition: opacity 0.3s ease, transform 0.3s ease;
+        z-index: 1000;
+    }
+
+    #checkbox_toggle:checked~.menu_wrapper li {
+        opacity: 1;
+        transform: translateY(0);
+        transition-delay: 0.2s;
+    }
+
+    .menu li:hover {
+        transition: 0.5s all ease;
+        color: rgb(87, 117, 92);
+    }
+
+    .menu_container {
+        background-color: rgb(2, 0, 0);
+        border-radius: 50px;
+        width:1000px;
+        height: 90px;
+        position: absolute;
+        margin-left: 30%;
+        margin-right: 20%;
+        text-align: left;
+    }
+    
+
+    .menu_wrapper {
+        width: 100%;
+        max-height: 0;
+        overflow: hidden;
+        visibility: hidden;
+        right: 0px;
+        left: 0px;
+        z-index: 10;
+        transition: max-height 0.3s ease-in-out;
+        position: absolute;
+    }
+
+    #checkbox_toggle:checked~.menu_wrapper {
+        visibility: visible;
+        max-height: 100vh;
+    }
+
+    .hamburger {
+        display: block;
+        padding: 20px 20px;
+    }
+
+    #checkbox_toggle:checked~.hamburger .hamburger-line {
+        background-color: transparent;
+    }
+
+    #checkbox_toggle:checked~.hamburger .hamburger-line::before {
+        transform: rotate(-45deg);
+        top: 0px;
+    }
+
+    #checkbox_toggle:checked~.hamburger .hamburger-line::after {
+        transform: rotate(45deg);
+        top: 0px;
+    }
+}
