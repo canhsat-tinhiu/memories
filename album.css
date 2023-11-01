@@ -236,7 +236,7 @@ ul li ul.dropdown li {
     top: -7px;
 }
 
-@media (max-width: 768px) {
+/* @media (max-width: 768px) {
     .navbar {
         justify-content: space-between;
     }
@@ -328,7 +328,7 @@ ul li ul.dropdown li {
         transform: rotate(-45deg);
         top: 0px;
     }
-
+ */
     #checkbox_toggle:checked~.hamburger .hamburger-line::after {
         transform: rotate(45deg);
         top: 0px;
